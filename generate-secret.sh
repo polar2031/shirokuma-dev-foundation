@@ -1,0 +1,1 @@
+echo APP_KEYS=$(openssl rand -base64 24),$(openssl rand -base64 24) > .secret.env
