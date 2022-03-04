@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CanonicalUrl": {
+    "canonicalUrl": {
       "pluginOptions": {},
       "type": "uid",
       "required": true
@@ -25,6 +25,15 @@
     "content": {
       "pluginOptions": {},
       "type": "richtext"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "articles"
+    },
+    "summary": {
+      "type": "text"
     }
   }
 }
