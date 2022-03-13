@@ -1,2 +1,36 @@
-node_modules
-.*
+# docker ignore itself
+dockerfile
+.dockerignore
+
+# version control
+.git
+.gitignore
+
+# dependencies
+/node_modules
+
+# build files
+/build
+public/uploads/*
+!public/uploads/.gitkeep
+/.cache
+/.tmp
+*.db
+.strapi-updater.json
+
+# development
+/script
+.nvmrc
+.eslintignore
+.eslintrc
+README.md
+
+# env files
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
